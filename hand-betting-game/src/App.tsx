@@ -4,7 +4,7 @@ import { GameErrorBoundary } from 'components/ErrorBoundary'
 import { StoreProvider } from 'store/store.provider'
 import { LandingPage } from 'components/LandingPage/LandingPage'
 import { Game } from 'components/Game/Game'
-import { useGameStore } from 'store/gameStore'
+import { useAppSelector, selectScreen } from 'store/gameStore'
 
 const theme = createTheme({
   palette: {
@@ -35,20 +35,20 @@ const theme = createTheme({
 })
 
 const AppContent: React.FC = () => {
-  const { screen } = useGameStore()
+  const screen = useAppSelector(selectScreen)
   return screen === 'landing' ? <LandingPage /> : <Game />
 }
 
 function App(): React.ReactElement {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <GameErrorBoundary>
-        <StoreProvider>
+    <StoreProvider>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <GameErrorBoundary>
           <AppContent />
-        </StoreProvider>
-      </GameErrorBoundary>
-    </ThemeProvider>
+        </GameErrorBoundary>
+      </ThemeProvider>
+    </StoreProvider>
   )
 }
 
