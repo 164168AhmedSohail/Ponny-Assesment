@@ -34,19 +34,20 @@ button {
 
 // Scrollbar styling
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(245, 200, 66, 0.45);
   border-radius: 3px;
 
   &:hover {
-    background: rgba(0, 0, 0, 0.35);
+    background: rgba(245, 200, 66, 0.75);
   }
 }

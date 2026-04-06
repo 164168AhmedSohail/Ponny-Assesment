@@ -61,7 +61,7 @@ export const Tile = memo(
             transition: 'transform 0.15s ease, box-shadow 0.15s ease',
             boxShadow: highlight ? 4 : 1,
             p: 0,
-            background: 'none',
+            backgroundImage: 'none',
             '&:hover': onClick
               ? { transform: 'translateY(-3px)', boxShadow: 6 }
               : {},
