@@ -50,9 +50,9 @@ npm run build
 **Code logic decisions** | Directed the tile value scaling rule, deck reshuffle behaviour, scoring multiplier design, and game-over conditions |
 **Code review** | Read through the full generated codebase to understand every architectural decision well enough to extend it live |
 
-### What AI Generated (Claude — claude-sonnet-4-6)
+### What AI Generated
 
-- All TypeScript type definitions (`src/types/`)
+- All TypeScript type definitions
 - All service classes
 - All React components
 - Redux Toolkit store

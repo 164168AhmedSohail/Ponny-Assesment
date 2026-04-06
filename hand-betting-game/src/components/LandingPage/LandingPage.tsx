@@ -37,15 +37,16 @@ export const LandingPage: React.FC = () => {
     <main className={styles.root} aria-label="Landing page">
       <div className={styles.container}>
         <div className={styles.logo}>
+          <div className={styles.iconWrap} aria-hidden="true">🀄</div>
           <Typography className={styles.title} component="h1" aria-label="Hand Betting Game">
-            🀄 Hand Betting Game
+            Hand Betting Game
           </Typography>
-          <Typography className={styles.subtitle} variant="body2" color="text.secondary">
+          <Typography className={styles.subtitle} component="p">
             Mahjong Tile Betting — Predict Higher or Lower
           </Typography>
         </div>
 
-        <Card elevation={4}>
+        <Card elevation={0} className={styles.card}>
           <Box className={styles.actions}>
             <Button
               onClick={handleNewGame}
@@ -71,7 +72,7 @@ export const LandingPage: React.FC = () => {
                 >
                   Continue Game
                 </Button>
-                <Typography className={styles.continueNote} color="text.secondary">
+                <Typography className={styles.continueNote}>
                   Score: {state.currentScore.toLocaleString()} — Hand #{state.history.length + 1}
                 </Typography>
               </>

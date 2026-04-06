@@ -1,14 +1,36 @@
 :root {
-  --color-primary: #2c3e50;
-  --color-accent: #e74c3c;
-  --color-secondary: #8e44ad;
-  --color-success: #27ae60;
-  --color-error: #c0392b;
-  --color-warning: #f39c12;
-  --color-bg-start: #1a1a2e;
-  --color-bg-end: #16213e;
-  --color-tile-bg: #f8f9fa;
-  --color-tile-border: #dee2e6;
-  --color-tile-text: #2c3e50;
-  --color-surface: #ffffff;
+  /* Brand */
+  --color-gold:           #F5C842;
+  --color-gold-dim:       #C9A227;
+  --color-crimson:        #FF4560;
+  --color-purple:         #7C4DFF;
+  --color-teal:           #00C896;
+
+  /* Semantic */
+  --color-primary:        #F5C842;
+  --color-accent:         #FF4560;
+  --color-secondary:      #7C4DFF;
+  --color-success:        #00C896;
+  --color-error:          #FF4560;
+  --color-warning:        #FFA726;
+
+  /* Backgrounds */
+  --color-bg-start:       #0a0e27;
+  --color-bg-mid:         #0f1240;
+  --color-bg-end:         #1a0e3a;
+  --color-surface:        rgba(18, 22, 60, 0.90);
+
+  /* Tiles */
+  --color-tile-bg:        #FFF8E7;
+  --color-tile-border:    #D4AF37;
+  --color-tile-text:      #1a1040;
+
+  /* Text */
+  --color-text-primary:   #E8EAF6;
+  --color-text-secondary: #9FA8DA;
+
+  /* Glow effects */
+  --glow-gold:            0 0 24px rgba(245, 200, 66, 0.30);
+  --glow-crimson:         0 0 24px rgba(255, 69, 96, 0.30);
+  --glow-teal:            0 0 24px rgba(0, 200, 150, 0.30);
 }
